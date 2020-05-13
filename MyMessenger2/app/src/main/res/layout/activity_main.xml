@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/ha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView3"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/avt"
+            app:civ_border_width="2dp"
+            android:layout_margin="4dp"
+            app:civ_border_color="#e0dfdb"/>
+            <TextView
+                android:text="Chats"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="8"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:background="@null"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:src="@drawable/android_new"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/ha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:background="@drawable/botron">
+            <ImageView
+                android:src="@drawable/android_search"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="2"
+                android:paddingTop="10dp"
+                android:layout_marginTop="-5dp"
+                android:tint="#777777"/>
+            <EditText
+                android:id="@+id/searchView"
+                android:hint="Search"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="8"
+                android:paddingTop="0dp"
+                android:paddingLeft="0dp"
+                android:background="@null"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        >
+
+
+    </ListView>
+
+
+</LinearLayout>

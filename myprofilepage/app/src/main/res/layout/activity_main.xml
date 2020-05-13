@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#FAFAFA"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+  android:layout_weight="1">
+  <ImageView
+      android:src="@drawable/android_arrow"
+      android:layout_width="0dp"
+      android:layout_height="35dp"
+      android:layout_marginLeft="10dp"
+      android:layout_weight="1"
+      android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:background="@drawable/botron_button"
+        android:layout_marginTop="10dp">
+  <ImageView
+    android:src="@drawable/android_search"
+      android:layout_width="0dp"
+      android:layout_height="28dp"
+    android:layout_weight="2"
+    android:paddingTop="10dp"
+      android:layout_marginTop="-5dp"
+    android:tint="#777777"/>
+  <EditText
+    android:hint="Search"
+      android:layout_width="0dp"
+      android:layout_height="30dp"
+    android:layout_weight="8"
+    android:paddingTop="0dp"
+      android:paddingLeft="0dp"
+      android:background="@null"
+      />
+
+
+</LinearLayout>
+  <ImageView
+      android:src="@drawable/android_heart"
+      android:layout_width="0dp"
+      android:layout_height="40dp"
+      android:layout_weight="1"
+      android:paddingTop="10dp"
+      android:layout_marginRight="10dp"/>
+
+</LinearLayout>
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginTop="-16dp"
+    android:layout_weight="6">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:src="@drawable/anhbia"
+
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-36dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/android_cam"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="@+id/image"
+        android:background="@drawable/vuong"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="20dp"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="240dp"
+        android:src="@drawable/avt"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="60dp"
+        app:civ_border_color="#e0dfdb"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/android_cam"
+
+        android:background="@drawable/radius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+
+        android:layout_marginTop="270dp"
+       />
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_marginTop="-40dp">
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:text="Nguyễn Anh Linh"
+      android:gravity="center"
+      android:textSize="30dp"
+      android:textStyle="bold"
+      android:background="@null"
+      android:paddingBottom="0dp"></EditText>
+</LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1.5"
+      android:orientation="horizontal"
+      android:layout_marginTop="-15dp"
+       android:weightSum="9">
+      <ImageView
+
+      android:layout_marginLeft="40dp"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:scaleType="fitCenter"
+          android:src="@drawable/android_plus"
+          android:background="@drawable/flus"
+        >
+      </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:text="Add to Story"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="-70dp"
+        android:textColor="#155dd8"></TextView>
+    <ImageView
+
+        android:layout_marginLeft="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/android_eye"
+        android:background="@drawable/radius"
+        >
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View As"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="-52dp"
+        ></TextView>
+    <ImageView
+
+        android:layout_marginLeft="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/android_edit"
+        android:background="@drawable/radius"
+        >
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="-60dp"
+        ></TextView>
+    <ImageView
+
+        android:layout_marginLeft="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/android_threedots"
+        android:background="@drawable/radius"
+        >
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="-45dp"
+      ></TextView>
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.6"
+    android:orientation="vertical"
+    android:weightSum="10"
+
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/android_edu"
+        android:layout_weight="1"
+        android:tint="#777777"
+        android:layout_marginLeft="10dp"
+        ></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cv"
+        android:textColor="#000000"
+        android:layout_weight="8.5"
+        android:layout_marginLeft="5dp"
+        ></TextView>
+
+
+  </LinearLayout>
+</LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.5"
+      android:orientation="vertical"
+      android:weightSum="10"
+
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <ImageView
+          android:layout_width="22dp"
+          android:layout_height="22dp"
+          android:scaleType="fitCenter"
+          android:src="@drawable/android_edu"
+          android:layout_weight="1"
+          android:tint="#777777"
+          android:layout_marginLeft="-2dp"
+          ></ImageView>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/android"
+          android:textColor="#000000"
+          android:layout_weight="8.5"
+          android:layout_marginLeft="-9dp"
+          ></TextView>
+
+
+    </LinearLayout>
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.7"
+      android:orientation="vertical"
+      android:weightSum="10"
+
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:scaleType="fitCenter"
+          android:src="@drawable/android_cv"
+          android:layout_weight="1"
+          android:tint="#777777"
+          android:layout_marginLeft="9dp"
+          android:layout_marginTop="0dp"
+          ></ImageView>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/student"
+          android:textColor="#000000"
+          android:layout_weight="8.5"
+          android:layout_marginLeft="5dp"
+          ></TextView>
+
+
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>
